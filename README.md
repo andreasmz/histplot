@@ -15,7 +15,7 @@ Features:
 ### Installation
 You need to have python and pip installed. Type inside your console
 ```bash
-pip install "https://raw.githubusercontent.com/andreasmz/histplot/main/histplot.whl"
+pip install "https://raw.githubusercontent.com/andreasmz/histplot/main/dist/histplot-1.0.0-py3-none-any.whl"
 ```
 To start it, run
 ```bash
