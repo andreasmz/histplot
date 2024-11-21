@@ -33,6 +33,7 @@ class GUI():
         self.data = None
         self.histData = None
         self.config = None
+        self.configPath = os.path.join(*[os.path.dirname(__file__), 'histplot_settings.ini'])
 
     def GUI(self):
         self.root = tk.Tk()
@@ -42,7 +43,7 @@ class GUI():
         self.root.protocol("WM_DELETE_WINDOW", self.On_closing)
 
         self.config = configparser.ConfigParser()
-        self.config.read('histplot_settings.ini')
+        self.config.read(self.configPath)
         if "SETTINGS" not in self.config.sections():
             self.config.add_section("SETTINGS")
         if not self.config.has_option("SETTINGS", "XAxisLabel"):
@@ -159,7 +160,7 @@ class GUI():
     def On_closing(self):
         try:
             self.ConfigUpdate()
-            with open('histplot_settings.ini', 'w') as configfile:
+            with open(self.configPath, 'w') as configfile:
                 self.config.write(configfile)
         except Exception as ex:
             print(str(ex))
