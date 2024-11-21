@@ -1,6 +1,6 @@
 # Histplot
 
-![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fandreasmz%2Fhistplot%2Fmain%2Fpyproject.toml&query=%24.project.version&label=Python&style=flat&logo=Python)
+![Dynamic TOML Badge](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fandreasmz%2Fhistplot%2Fmain%2Fpyproject.toml&query=%24.project.requires-python&label=Python&style=flat&logo=Python)
 
 
 You want quickly to plot histograms of multiple files merged together? If you have this specific problem, then histplot is the solution. No programming required, only work on a simple GUI.
